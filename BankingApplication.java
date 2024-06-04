@@ -50,7 +50,7 @@ public class BankingApplication {
                                 try {
                                     balance = input.nextDouble();
                                     validBalance = false;
-                                } catch (Exception e) {
+                                } catch (InputMismatchException e) {
                                     System.out.println("Invalid value<<must be an number>>");
                                     input.nextLine();
                                 }
